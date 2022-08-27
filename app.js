@@ -6,6 +6,9 @@ const port = 3000;
 
 app.set("view engine", "ejs");
 
+// Đường dẫn tĩnh
+app.use(express.static('public'));
+
 // Goi Control
 
 app.use('/', require('./configs/Controls'));
